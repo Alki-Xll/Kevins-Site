@@ -1,0 +1,17 @@
+body {
+    background-color: #12100E;
+    font-family: "Comic Sans MS", sans-serif;
+    font-style: normal;
+    color: #F5F5F5;
+    margin: 0;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    text-align: center;
+}
