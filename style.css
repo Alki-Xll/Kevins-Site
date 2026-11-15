@@ -1,9 +1,39 @@
 body {
     background-color: #12100E;
-    font-family: "Comic Sans MS", sans-serif;
-    font-style: normal;
+    font-family: "MyFont";
     color: #F5F5F5;
     margin: 0;
+}
+
+@font-face {
+            font-family: "MyFont";
+            src: url("fonts/Myfont-Regular.ttf");
+        }
+
+.big {
+    font-size: 4rem;
+}
+
+.bigh {
+    font-size: 5rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 3vw, 4rem);
+    margin-top: 2rem;
+    margin-left: 5%;
+    text-align: left;
+}
+
+p {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    line-height: 1.1;
+    max-width: 280px;
+    text-align: left;
+    margin-bottom: 10vh;
+    align-self: flex-start;
+    margin-left: 5%;
+    padding: 20px;
 }
 
 .banner {
@@ -13,5 +43,5 @@ body {
 }
 
 section {
-    text-align: center;
+    text-align: left;
 }
