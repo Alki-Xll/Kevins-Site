@@ -27,11 +27,27 @@ body {
     object-fit: cover;
     z-index: 0;
     filter: brightness(0.65);
+    pointer-events: none;
+    user-select: none;
+    animation: pan-banner 30s ease-in-out infinite alternate;
 }
- .content-layer {
+
+@keyframes pan-banner {
+    0%, 12% {
+        object-position: 0% 50%;
+    }
+    50%, 62% {
+        object-position: 100% 50%;
+    }
+    100% {
+        object-position: 0% 50%;
+    }
+}
+
+.content-layer {
     position: relative;
     z-index: 1;
- }
+}
 
 .content-box {
     background-color: rgba(18, 16, 14, 0.85);
