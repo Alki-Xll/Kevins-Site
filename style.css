@@ -57,6 +57,8 @@ body {
 
 .big {
     font-size: 4rem;
+    padding-top: 3.5rem;
+
 }
 
 .bigh {
@@ -70,11 +72,29 @@ h1 {
     text-align: left;
 }
 
+h2 {
+    font-size: clamp(2rem, 3vw, 4rem);
+    margin-top: 2rem;
+    margin-left: 5%;
+    text-align: left;
+}
+
 p {
     font-size: clamp(1.5rem, 2vw, 3rem);
     line-height: 1.1;
+    max-width: 380px;
+    text-align: center;
+    margin-bottom: 10vh;
+    align-self: flex-start;
+    margin-left: 5%;
+    padding: 2px;
+}
+
+p3 {
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    line-height: 1.1;
     max-width: 280px;
-    text-align: left;
+    text-align: auto;
     margin-bottom: 10vh;
     align-self: flex-start;
     margin-left: 5%;
@@ -87,6 +107,23 @@ p {
     height: auto;
 }
 
+.img1 {
+    width: 300px;        
+    height: auto;        
+    object-fit: cover;    
+    border-radius: 10px;  
+    border: 2px solid #fff700; 
+}
+
+.img2 {
+    width: 400px;        
+    height: auto;        
+    object-fit: cover;    
+    border-radius: 10px;  
+    border: 2px solid #fff700; 
+}
+
 section {
     text-align: left;
 }
+
