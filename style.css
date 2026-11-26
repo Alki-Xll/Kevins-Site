@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bs-body-bg: #12100E;
+    --bs-body-bg: #000000;
     --bs-body-color: #F5F5F5;
     --bs-body-font-family: "MyFont", sans-serif;
 }
@@ -16,6 +16,10 @@ body {
     font-family: "MyFont";
     color: #F5F5F5;
     margin: 0;
+}
+
+.text-nowrap {
+    text-wrap: nowrap;
 }
 
 .bg-banner {
@@ -50,14 +54,16 @@ body {
 }
 
 .content-box {
-    background-color: rgba(18, 16, 14, 0.85);
+    background-color: rgba(4, 0, 72, 0.55);
     border-radius: 12px;
+    border: 1px solid #F5F5F5;
     padding: 2rem;
+
 }
 
 .big {
-    font-size: 4rem;
-    padding-top: 3.5rem;
+    font-size: clamp(1.5rem, 4rem, 6rem);
+    padding-top: clamp(1.5rem, 3.5rem, 4rem);
 
 }
 
@@ -90,16 +96,7 @@ p {
     padding: 2px;
 }
 
-p3 {
-    font-size: clamp(1.5rem, 4vw, 5rem);
-    line-height: 1.1;
-    max-width: 280px;
-    text-align: auto;
-    margin-bottom: 10vh;
-    align-self: flex-start;
-    margin-left: 5%;
-    padding: 20px;
-}
+
 
 .banner {
     display: block;
@@ -107,20 +104,13 @@ p3 {
     height: auto;
 }
 
-.img1 {
-    width: 300px;        
+.img1, .img2 {
+    width: 100%; 
+    max-width: 400px;       
     height: auto;        
     object-fit: cover;    
     border-radius: 10px;  
-    border: 2px solid #fff700; 
-}
-
-.img2 {
-    width: 400px;        
-    height: auto;        
-    object-fit: cover;    
-    border-radius: 10px;  
-    border: 2px solid #fff700; 
+    border: 2px solid #fffb7b; 
 }
 
 section {
